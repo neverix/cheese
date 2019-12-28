@@ -10,4 +10,4 @@ var r,e=function(r){var e="b",n="w",t=-1,o="p",i="n",f="b",a="r",l="q",u="k",s="
 },{}],"QCba":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("./ui"),n=require("./board"),t=require("./renderer");function r(){var r=new t.Renderer,o=new e.CommentManager,u=new n.Board;u=new n.Board(function(e){r.render(e),o.text=u.comment});var a=new e.TextManager;u.load(a.text),new e.FileManager(function(e){return a.text=e}),new e.ButtonManager(function(){return u.start()},function(){return u.undo()},function(){return u.redo()},function(){return u.end()}),document.getElementById("clear-button").onclick=function(){return a.clear()},document.getElementById("parse-button").onclick=function(){u.load(a.text)}}document.body.onload=r;
 },{"./ui":"sRuM","./board":"tQwi","./renderer":"rvka"}]},{},["QCba"], null)
-//# sourceMappingURL=/src.ca60ce53.js.map
+//# sourceMappingURL=src.ca60ce53.js.map

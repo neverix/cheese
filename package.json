@@ -4,8 +4,8 @@
     "description": "Chess viewer",
     "main": "dist/index.js",
     "scripts": {
-        "start": "parcel src/index.html",
-        "build": "parcel build src/index.html"
+        "start": "parcel src/index.html --public-url '.'",
+        "build": "rm -rf docs/* && parcel build src/index.html -d docs/ --public-url '.' && rm -rf docs/*.map"
     },
     "author": "neverix",
     "license": "MIT",

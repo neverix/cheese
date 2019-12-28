@@ -45,7 +45,6 @@ body {
         #file-input {
             font-size: 2vh;
             color: transparent;
-            max-width: 14vh;
         }
     }
 
@@ -61,7 +60,7 @@ body {
     }
 }
 
-@media (max-aspect-ratio: 1/2) {
+@media (max-aspect-ratio: 1/1) {
     #file-input {
         display: none;
     }
