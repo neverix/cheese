@@ -4,12 +4,13 @@
     "description": "Chess viewer",
     "main": "dist/index.js",
     "scripts": {
-        "start": "parcel src/index.html --public-url '.'",
+        "start": "parcel src/index.html",
         "build": "rm -rf docs/* && parcel build src/index.html -d docs/ --public-url '.' && rm -rf docs/*.map"
     },
     "author": "neverix",
     "license": "MIT",
     "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.12.0",
         "cssnano": "^4.1.10",
         "sass": "^1.24.0",
         "typescript": "^3.7.4"

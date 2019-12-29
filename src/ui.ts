@@ -34,6 +34,11 @@ class FileManager {
             event.target.value = ""
         }
 
+        const fileButton = document.getElementById(
+            "file-button"
+        ) as HTMLButtonElement
+        fileButton.onclick = () => filePicker.click()
+
         const textarea = document.getElementById(
             "textarea"
         ) as HTMLTextAreaElement

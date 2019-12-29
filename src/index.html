@@ -2,6 +2,10 @@
     <head>
         <title>Cheese</title>
         <link rel="stylesheet" href="./style.scss" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta charset="UTF-8" />
     </head>
@@ -14,15 +18,27 @@
         <hr />
 
         <div class="controls">
-            <button id="start">⏮</button>
-            <button id="undo">◀</button>
-            <button id="redo">▶</button>
-            <button id="end">⏭</button>
+            <button id="start">
+                <i class="fas fa-angle-double-left"></i>
+            </button>
+            <button id="undo">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <button id="redo">
+                <i class="fas fa-angle-right"></i>
+            </button>
+            <button id="end">
+                <i
+                    class="fas fa-angle-double-left"
+                    style="transform: scaleX(-1);"
+                ></i>
+            </button>
         </div>
 
         <div class="text-controls">
             <button id="clear-button">Clear</button>
             <button id="parse-button">Parse game</button>
+            <button id="file-button">Load from file</button>
             <input type="file" id="file-input" />
         </div>
 
