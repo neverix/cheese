@@ -6,6 +6,7 @@ body {
     background: $light;
     font-family: sans-serif;
     color: $dark;
+    touch-action: manipulation;
 
     h1 {
         margin-top: 2vh;
